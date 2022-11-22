@@ -29,7 +29,7 @@ def read_i2c_vars():
 		print('i2c pressure: ', data.pressure)
 		print('i2c humidity: ', data.humidity)
 		
-		time.sleep(min_period*100)
+		time.sleep(min_period)
 		
 	
 th_i2c_readout = threading.Thread(target=read_i2c_vars)
